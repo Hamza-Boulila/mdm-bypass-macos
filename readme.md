@@ -50,13 +50,13 @@ Download or clone, then from the Recovery terminal:
 ./mdm-bypass.sh -y -u techadmin -f "Tech Admin" -p 'Str0ngPass!'
 
 # Block extra domains (comma-separated)
-./mdm-bypass.sh -y -d "jamf.com,unlock.apple.com"
+./mdm-bypass.sh -y -d "domain"
 ```
 
 Typical one-liner:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOURNAME/mac-mdm-bypass/main/mdm-bypass.sh -o mdm-bypass.sh && chmod +x mdm-bypass.sh && ./mdm-bypass.sh -y && reboot
+curl -fsSL https://raw.githubusercontent.com/Hamza-Boulila/mac-mdm-bypass/main/mdm-bypass.sh -o mdm-bypass.sh && chmod +x mdm-bypass.sh && ./mdm-bypass.sh -y && reboot
 ```
 
 ### Flags
@@ -73,14 +73,6 @@ curl -fsSL https://raw.githubusercontent.com/YOURNAME/mac-mdm-bypass/main/mdm-by
 ---
 
 ## Built-in blocked domains
-
-```
-deviceenrollment.apple.com
-mdmenrollment.apple.com
-iprofiles.apple.com
-vpp.itunes.apple.com
-mdm.apple.com
-```
 
 Add more with `-d "domain1,domain2"`.
 
